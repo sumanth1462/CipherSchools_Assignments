@@ -10,7 +10,7 @@ def isExist(l1,tValue):
         if(l1[i][j]>tValue):
             j=j-1
         else:
-            i=i+j-1
+            i=i+1 
     return False
 
 n=int(input())
