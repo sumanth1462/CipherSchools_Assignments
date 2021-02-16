@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int maxProf(int price[],int n){
+    int profit=0;
+    for(int i=1;i<n;i++){
+        if(price[i] > price[i-1]){
+            profit+=price[i]-price[i-1];
+        }
+    }
+    return profit;
+}
+int main()
+{
+    int price[]={1,5,3,8,12};
+    int n=sizeof(price)/sizeof(price[0]);
+    cout<<maxProf(price,n);
+
+    return 0;
+}
