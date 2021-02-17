@@ -13,6 +13,7 @@ def isExist(l1,tValue):
             i=i+1 
     return False
 
+#size of array
 n=int(input())
 #target
 m=int(input())
