@@ -14,7 +14,7 @@ Node *oddEven(Node *head){
     Node *odd=head;
     Node *even=head->next;
     Node *evenHead=even;
-    while(even!=NULL and even->next!=NULL){
+    while(even!=NULL && even->next!=NULL){
         odd->next=even->next;
         odd=odd->next;
         even->next=odd->next;
